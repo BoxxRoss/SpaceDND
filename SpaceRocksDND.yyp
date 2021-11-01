@@ -7,10 +7,12 @@
     {"id":{"name":"Spr_Ship","path":"sprites/Spr_Ship/Spr_Ship.yy",},"order":0,},
     {"id":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"order":2,},
     {"id":{"name":"Spr_medrock","path":"sprites/Spr_medrock/Spr_medrock.yy",},"order":1,},
+    {"id":{"name":"obj_debrie","path":"objects/obj_debrie/obj_debrie.yy",},"order":5,},
     {"id":{"name":"Spr_bullet","path":"sprites/Spr_bullet/Spr_bullet.yy",},"order":5,},
     {"id":{"name":"Spr_smallrock","path":"sprites/Spr_smallrock/Spr_smallrock.yy",},"order":3,},
     {"id":{"name":"Spr_deadplayer","path":"sprites/Spr_deadplayer/Spr_deadplayer.yy",},"order":6,},
     {"id":{"name":"obj_Ship","path":"objects/obj_Ship/obj_Ship.yy",},"order":0,},
+    {"id":{"name":"SPR_debris","path":"sprites/SPR_debris/SPR_debris.yy",},"order":7,},
     {"id":{"name":"RM_GAME","path":"rooms/RM_GAME/RM_GAME.yy",},"order":0,},
   ],
   "Options": [

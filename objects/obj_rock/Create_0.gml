@@ -27,5 +27,5 @@ image_angle = floor(random_range(0, 359 + 1));
 /// @DnDAction : YoYo Games.Movement.Set_Speed
 /// @DnDVersion : 1
 /// @DnDHash : 20261DDF
-/// @DnDArgument : "speed" "1"
-speed = 1;
+/// @DnDArgument : "speed" "0.50"
+speed = 0.50;

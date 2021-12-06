@@ -22,3 +22,14 @@ instance_destroy();
 /// @DnDArgument : "objectid" "Obj_explosion"
 /// @DnDSaveInfo : "objectid" "Obj_explosion"
 instance_create_layer(x + 0, y + 0, "Instances", Obj_explosion);
+
+/// @DnDAction : YoYo Games.Instances.Set_Alarm
+/// @DnDVersion : 1
+/// @DnDHash : 631AD00D
+/// @DnDApplyTo : {obj_game}
+/// @DnDArgument : "steps" "120"
+/// @DnDArgument : "alarm" "2"
+with(obj_game) {
+alarm_set(2, 120);
+
+}

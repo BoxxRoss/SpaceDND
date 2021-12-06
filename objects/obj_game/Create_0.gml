@@ -1,16 +1,15 @@
 /// @DnDAction : YoYo Games.Instance Variables.Set_Score
 /// @DnDVersion : 1
 /// @DnDHash : 7D324EC0
-/// @DnDArgument : "score" "950"
 
-__dnd_score = real(950);
+__dnd_score = real(0);
 
 /// @DnDAction : YoYo Games.Instance Variables.Set_Lives
 /// @DnDVersion : 1
 /// @DnDHash : 27A8A03A
-/// @DnDArgument : "lives" "1"
+/// @DnDArgument : "lives" "3"
 
-__dnd_lives = real(1);
+__dnd_lives = real(3);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1

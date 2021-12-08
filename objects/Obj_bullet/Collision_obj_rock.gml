@@ -1,3 +1,18 @@
+/// @DnDAction : YoYo Games.Audio.Audio_Set_Volume
+/// @DnDVersion : 1
+/// @DnDHash : 08938881
+/// @DnDArgument : "sound" "sound__1_"
+/// @DnDArgument : "volume" "0.5"
+/// @DnDSaveInfo : "sound" "sound__1_"
+audio_sound_gain(sound__1_, 0.5, 0);
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 380ABE99
+/// @DnDArgument : "soundid" "sound__1_"
+/// @DnDSaveInfo : "soundid" "sound__1_"
+audio_play_sound(sound__1_, 0, 0);
+
 /// @DnDAction : YoYo Games.Instance Variables.Set_Score
 /// @DnDVersion : 1
 /// @DnDHash : 0C22E8EF

@@ -11,12 +11,12 @@ if(l25418AFD_0)
 	/// @DnDHash : 2531A36E
 	/// @DnDInput : 2
 	/// @DnDParent : 25418AFD
-	/// @DnDArgument : "expr" "target.x - (camera_width/2)"
-	/// @DnDArgument : "expr_1" "target.y - (camera_height/2)"
+	/// @DnDArgument : "expr" "clamp( target.x - (cameraWidth/2) , 0, room_width - cameraWidth)"
+	/// @DnDArgument : "expr_1" "clamp( target.y - (cameraHeight/2) , 0, room_height - cameraHeight)"
 	/// @DnDArgument : "var" "cameraX"
 	/// @DnDArgument : "var_1" "cameraY"
-	cameraX = target.x - (camera_width/2);
-	cameraY = target.y - (camera_height/2);
+	cameraX = clamp( target.x - (cameraWidth/2) , 0, room_width - cameraWidth);
+	cameraY = clamp( target.y - (cameraHeight/2) , 0, room_height - cameraHeight);
 
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1

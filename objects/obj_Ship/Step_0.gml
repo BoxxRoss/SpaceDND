@@ -2,7 +2,8 @@
 /// @DnDVersion : 1
 /// @DnDHash : 2BF52CD4
 /// @DnDArgument : "margin" "sprite_width/2"
-move_wrap(1, 1, sprite_width/2);
+/// @DnDArgument : "ver" "0"
+move_wrap(1, 0, sprite_width/2);
 
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Down
 /// @DnDVersion : 1.1

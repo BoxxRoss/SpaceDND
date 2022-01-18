@@ -7,6 +7,6 @@ speed = 8;
 
 /// @DnDAction : YoYo Games.Instances.Sprite_Rotate
 /// @DnDVersion : 1
-/// @DnDHash : 3C132040
-/// @DnDArgument : "angle" "direction"
-image_angle = direction;
+/// @DnDHash : 20503681
+/// @DnDArgument : "angle" "newbullet"
+image_angle = newbullet;

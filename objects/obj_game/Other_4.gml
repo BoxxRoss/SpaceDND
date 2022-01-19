@@ -53,8 +53,7 @@ if(room == RM_GAME)
 	/// @DnDVersion : 1
 	/// @DnDHash : 7B6E04BE
 	/// @DnDParent : 3102746C
-	/// @DnDArgument : "times" "100"
-	repeat(100)
+	
 	{
 		/// @DnDAction : YoYo Games.Random.Choose
 		/// @DnDVersion : 1

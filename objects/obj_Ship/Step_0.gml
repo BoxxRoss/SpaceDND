@@ -1,11 +1,33 @@
-/// @DnDAction : YoYo Games.Instances.Get_Instance_Var
+/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 34406144
-/// @DnDApplyTo : {Obj_bullet}
-/// @DnDArgument : "target" "imagee"
-/// @DnDArgument : "instvar" "6"
-with(Obj_bullet) {
-imagee = direction;
+/// @DnDHash : 58D60025
+/// @DnDArgument : "var" "speed"
+/// @DnDArgument : "op" "2"
+/// @DnDArgument : "value" "10"
+if(speed > 10)
+{
+	/// @DnDAction : YoYo Games.Movement.Set_Speed
+	/// @DnDVersion : 1
+	/// @DnDHash : 4D62A842
+	/// @DnDParent : 58D60025
+	/// @DnDArgument : "speed" "10"
+	speed = 10;
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7A09FFCA
+/// @DnDArgument : "var" "speed"
+/// @DnDArgument : "op" "1"
+/// @DnDArgument : "value" "-10"
+if(speed < -10)
+{
+	/// @DnDAction : YoYo Games.Movement.Set_Speed
+	/// @DnDVersion : 1
+	/// @DnDHash : 52C8E538
+	/// @DnDParent : 7A09FFCA
+	/// @DnDArgument : "speed" "-10"
+	speed = -10;
 }
 
 /// @DnDAction : YoYo Games.Movement.Wrap_Room
@@ -53,10 +75,16 @@ if (l40F1584A_0)
 		/// @DnDArgument : "xpos_relative" "1"
 		/// @DnDArgument : "ypos_relative" "1"
 		/// @DnDArgument : "var" "newbullet"
-		/// @DnDArgument : "var_temp" "1"
 		/// @DnDArgument : "objectid" "Obj_bullet"
 		/// @DnDSaveInfo : "objectid" "Obj_bullet"
-		var newbullet = instance_create_layer(x + 0, y + 0, "Instances", Obj_bullet);
+		newbullet = instance_create_layer(x + 0, y + 0, "Instances", Obj_bullet);
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 6E652E1A
+		/// @DnDParent : 5519E550
+		/// @DnDArgument : "var" "imagee"
+		imagee = 0;
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -68,23 +96,11 @@ if (l40F1584A_0)
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 66CBAB74
-		/// @DnDApplyTo : {Obj_bullet}
-		/// @DnDParent : 5519E550
-		/// @DnDArgument : "expr" "image_angle"
-		/// @DnDArgument : "var" "newbullet.direction"
-		with(Obj_bullet) {
-		newbullet.direction = image_angle;
-		
-		}
-	
-		/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
 		/// @DnDHash : 6D081557
 		/// @DnDParent : 5519E550
-		/// @DnDArgument : "expr" "20"
+		/// @DnDArgument : "expr" "15"
 		/// @DnDArgument : "var" "cooldown"
-		cooldown = 20;
+		cooldown = 15;
 	}
 }
 

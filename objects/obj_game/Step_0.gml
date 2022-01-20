@@ -37,25 +37,66 @@ if(room == RM_GAME)
 		room_goto(RM_WIN);
 	}
 
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 1935CFA2
+	/// @DnDParent : 29238154
+	/// @DnDArgument : "var" "health"
+	if(health == 0)
+	{
+		/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
+		/// @DnDVersion : 1
+		/// @DnDHash : 3B792E2D
+		/// @DnDParent : 1935CFA2
+		/// @DnDArgument : "lives" "-1"
+		/// @DnDArgument : "lives_relative" "1"
+		if(!variable_instance_exists(id, "__dnd_lives")) __dnd_lives = 0;
+		__dnd_lives += real(-1);
+	
+		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 427F8D6A
+		/// @DnDApplyTo : {obj_Ship}
+		/// @DnDParent : 1935CFA2
+		with(obj_Ship) instance_destroy();
+	
+		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 60A898CB
+		/// @DnDParent : 1935CFA2
+		/// @DnDArgument : "xpos_relative" "1"
+		/// @DnDArgument : "ypos_relative" "1"
+		/// @DnDArgument : "objectid" "Obj_explosion"
+		/// @DnDSaveInfo : "objectid" "Obj_explosion"
+		instance_create_layer(x + 0, y + 0, "Instances", Obj_explosion);
+	
+		/// @DnDAction : YoYo Games.Instances.Set_Alarm
+		/// @DnDVersion : 1
+		/// @DnDHash : 544C94BE
+		/// @DnDParent : 1935CFA2
+		/// @DnDArgument : "steps" "120"
+		/// @DnDArgument : "alarm" "2"
+		alarm_set(2, 120);
+	}
+
 	/// @DnDAction : YoYo Games.Instance Variables.If_Lives
 	/// @DnDVersion : 1
-	/// @DnDHash : 1E62D0D5
+	/// @DnDHash : 3F6C67AF
 	/// @DnDParent : 29238154
-	/// @DnDArgument : "op" "3"
 	if(!variable_instance_exists(id, "__dnd_lives")) __dnd_lives = 0;
-	if(__dnd_lives <= 0)
+	if(__dnd_lives == 0)
 	{
 		/// @DnDAction : YoYo Games.Instances.Set_Alarm
 		/// @DnDVersion : 1
-		/// @DnDHash : 336B02C3
-		/// @DnDParent : 1E62D0D5
+		/// @DnDHash : 179207DD
+		/// @DnDParent : 3F6C67AF
 		/// @DnDArgument : "steps" "90"
 		alarm_set(0, 90);
 	
 		/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
 		/// @DnDVersion : 1
-		/// @DnDHash : 2FA0BD50
-		/// @DnDParent : 1E62D0D5
+		/// @DnDHash : 70DE55F2
+		/// @DnDParent : 3F6C67AF
 		/// @DnDArgument : "lives" "1"
 		
 		__dnd_lives = real(1);

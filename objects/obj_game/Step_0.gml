@@ -9,9 +9,9 @@ if(room == RM_GAME)
 	/// @DnDVersion : 1
 	/// @DnDHash : 4A8A7D5C
 	/// @DnDParent : 29238154
-	/// @DnDArgument : "value" "1000"
+	/// @DnDArgument : "value" "1500"
 	if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
-	if(__dnd_score == 1000)
+	if(__dnd_score == 1500)
 	{
 		/// @DnDAction : YoYo Games.Audio.Stop_All_Audio
 		/// @DnDVersion : 1
@@ -42,7 +42,8 @@ if(room == RM_GAME)
 	/// @DnDHash : 1935CFA2
 	/// @DnDParent : 29238154
 	/// @DnDArgument : "var" "health"
-	if(health == 0)
+	/// @DnDArgument : "op" "3"
+	if(health <= 0)
 	{
 		/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
 		/// @DnDVersion : 1
@@ -53,22 +54,20 @@ if(room == RM_GAME)
 		if(!variable_instance_exists(id, "__dnd_lives")) __dnd_lives = 0;
 		__dnd_lives += real(-1);
 	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 5665288F
+		/// @DnDParent : 1935CFA2
+		/// @DnDArgument : "expr" "100"
+		/// @DnDArgument : "var" "health"
+		health = 100;
+	
 		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 		/// @DnDVersion : 1
-		/// @DnDHash : 427F8D6A
+		/// @DnDHash : 6FDD962A
 		/// @DnDApplyTo : {obj_Ship}
 		/// @DnDParent : 1935CFA2
 		with(obj_Ship) instance_destroy();
-	
-		/// @DnDAction : YoYo Games.Instances.Create_Instance
-		/// @DnDVersion : 1
-		/// @DnDHash : 60A898CB
-		/// @DnDParent : 1935CFA2
-		/// @DnDArgument : "xpos_relative" "1"
-		/// @DnDArgument : "ypos_relative" "1"
-		/// @DnDArgument : "objectid" "Obj_explosion"
-		/// @DnDSaveInfo : "objectid" "Obj_explosion"
-		instance_create_layer(x + 0, y + 0, "Instances", Obj_explosion);
 	
 		/// @DnDAction : YoYo Games.Instances.Set_Alarm
 		/// @DnDVersion : 1

@@ -1,5 +1,19 @@
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
+/// @DnDHash : 3D9E0F0E
+/// @DnDArgument : "var" "room"
+/// @DnDArgument : "value" "RM_GAMEOVER"
+if(room == RM_GAMEOVER)
+{
+	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 0BF547C5
+	/// @DnDParent : 3D9E0F0E
+	instance_destroy();
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
 /// @DnDHash : 58D60025
 /// @DnDArgument : "var" "speed"
 /// @DnDArgument : "op" "2"

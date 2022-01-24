@@ -29,3 +29,39 @@ if(l25418AFD_0)
 	/// @DnDArgument : "arg_2" "cameraY"
 	camera_set_view_pos(view_camera[0], cameraX, cameraY);
 }
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 5679583B
+/// @DnDInput : 2
+/// @DnDArgument : "function" "layer_x"
+/// @DnDArgument : "arg" ""paralax_zero""
+/// @DnDArgument : "arg_1" "cameraX * 0.9"
+layer_x("paralax_zero", cameraX * 0.9);
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 2E109EB0
+/// @DnDInput : 2
+/// @DnDArgument : "function" "layer_y"
+/// @DnDArgument : "arg" ""paralax_zero""
+/// @DnDArgument : "arg_1" "cameraY * 0.9"
+layer_y("paralax_zero", cameraY * 0.9);
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 4E4C598C
+/// @DnDInput : 2
+/// @DnDArgument : "function" "layer_x"
+/// @DnDArgument : "arg" ""Background""
+/// @DnDArgument : "arg_1" "cameraX * 0.7"
+layer_x("Background", cameraX * 0.7);
+
+/// @DnDAction : YoYo Games.Common.Function_Call
+/// @DnDVersion : 1
+/// @DnDHash : 0B7A96A7
+/// @DnDInput : 2
+/// @DnDArgument : "function" "layer_y"
+/// @DnDArgument : "arg" ""Background""
+/// @DnDArgument : "arg_1" "cameraY * 0.7"
+layer_y("Background", cameraY * 0.7);

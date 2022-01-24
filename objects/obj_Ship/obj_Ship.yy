@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_ark170",
-    "path": "sprites/Spr_ark170/Spr_ark170.yy",
+    "name": "Psr_tie_figheter",
+    "path": "sprites/Psr_tie_figheter/Psr_tie_figheter.yy",
   },
   "solid": false,
   "visible": true,

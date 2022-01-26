@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Psr_tie_figheter",
-    "path": "sprites/Psr_tie_figheter/Psr_tie_figheter.yy",
+    "name": "Spr_tie_figheter",
+    "path": "sprites/Spr_tie_figheter/Spr_tie_figheter.yy",
   },
   "solid": false,
   "visible": true,
@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ally",
+    "path": "folders/Objects/ally.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_Ship",

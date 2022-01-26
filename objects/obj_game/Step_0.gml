@@ -9,9 +9,9 @@ if(room == RM_GAME)
 	/// @DnDVersion : 1
 	/// @DnDHash : 4A8A7D5C
 	/// @DnDParent : 29238154
-	/// @DnDArgument : "value" "1500"
+	/// @DnDArgument : "value" "1500+ext"
 	if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
-	if(__dnd_score == 1500)
+	if(__dnd_score == 1500+ext)
 	{
 		/// @DnDAction : YoYo Games.Audio.Stop_All_Audio
 		/// @DnDVersion : 1

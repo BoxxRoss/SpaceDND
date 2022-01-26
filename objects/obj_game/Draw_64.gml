@@ -200,6 +200,17 @@ switch(l53658BC1_0)
 	
 		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
 		/// @DnDVersion : 1
+		/// @DnDHash : 545547F2
+		/// @DnDParent : 1A4726D8
+		/// @DnDArgument : "x" "300"
+		/// @DnDArgument : "y" "400"
+		/// @DnDArgument : "xscale" "1.5"
+		/// @DnDArgument : "yscale" "1.5"
+		/// @DnDArgument : "caption" ""Press Space to enter Freeplay ""
+		draw_text_transformed(300, 400, string("Press Space to enter Freeplay ") + "", 1.5, 1.5, 0);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+		/// @DnDVersion : 1
 		/// @DnDHash : 50E2FBB8
 		/// @DnDParent : 1A4726D8
 		/// @DnDArgument : "x" "300"

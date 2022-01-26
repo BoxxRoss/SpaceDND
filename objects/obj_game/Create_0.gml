@@ -7,9 +7,12 @@ __dnd_score = real(0);
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 6A4A509D
+/// @DnDInput : 2
 /// @DnDArgument : "expr" "100"
 /// @DnDArgument : "var" "health"
+/// @DnDArgument : "var_1" "ext"
 health = 100;
+ext = 0;
 
 /// @DnDAction : YoYo Games.Instance Variables.Set_Lives
 /// @DnDVersion : 1

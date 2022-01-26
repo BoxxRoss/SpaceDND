@@ -17,11 +17,11 @@ if(sprite_index == Spr_smallrock)
 	/// @DnDHash : 581269E9
 	/// @DnDApplyTo : {obj_game}
 	/// @DnDParent : 2DF8A655
-	/// @DnDArgument : "expr" "-25"
+	/// @DnDArgument : "expr" "-10"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "health"
 	with(obj_game) {
-	health += -25;
+	health += -10;
 	
 	}
 
@@ -44,11 +44,11 @@ if(sprite_index == Spr_medrock)
 	/// @DnDHash : 6F3275D8
 	/// @DnDApplyTo : {obj_game}
 	/// @DnDParent : 3DD3828E
-	/// @DnDArgument : "expr" "-50"
+	/// @DnDArgument : "expr" "-25"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "health"
 	with(obj_game) {
-	health += -50;
+	health += -25;
 	
 	}
 
@@ -71,11 +71,11 @@ if(sprite_index == Spr_largerock)
 	/// @DnDHash : 034C1860
 	/// @DnDApplyTo : {obj_game}
 	/// @DnDParent : 0D5C236B
-	/// @DnDArgument : "expr" "-100"
+	/// @DnDArgument : "expr" "-75"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "var" "health"
 	with(obj_game) {
-	health += -100;
+	health += -75;
 	
 	}
 

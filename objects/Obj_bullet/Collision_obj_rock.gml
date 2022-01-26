@@ -2,17 +2,18 @@
 /// @DnDVersion : 1
 /// @DnDHash : 7964EA12
 /// @DnDArgument : "var" "chancegun"
+/// @DnDArgument : "var_temp" "1"
 /// @DnDArgument : "type" "1"
 /// @DnDArgument : "max" "100"
-chancegun = floor(random_range(0, 100 + 1));
+var chancegun = floor(random_range(0, 100 + 1));
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 505E5D52
 /// @DnDArgument : "var" "chancegun"
 /// @DnDArgument : "op" "4"
-/// @DnDArgument : "value" "1"
-if(chancegun >= 1)
+/// @DnDArgument : "value" "96"
+if(chancegun >= 96)
 {
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
@@ -40,17 +41,6 @@ audio_sound_gain(sound__1_, 0.5, 0);
 /// @DnDSaveInfo : "soundid" "sound__1_"
 audio_play_sound(sound__1_, 0, 0);
 
-/// @DnDAction : YoYo Games.Instance Variables.Set_Score
-/// @DnDVersion : 1
-/// @DnDHash : 10FA7BFD
-/// @DnDApplyTo : {obj_game}
-/// @DnDArgument : "score" "10"
-/// @DnDArgument : "score_relative" "1"
-with(obj_game) {
-if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
-__dnd_score += real(10);
-}
-
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 138F4DFB
@@ -75,6 +65,18 @@ with(other) {
 	/// @DnDArgument : "value" "Spr_largerock"
 	if(sprite_index == Spr_largerock)
 	{
+		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
+		/// @DnDVersion : 1
+		/// @DnDHash : 0CF13C89
+		/// @DnDApplyTo : {obj_game}
+		/// @DnDParent : 0C53A352
+		/// @DnDArgument : "score" "20"
+		/// @DnDArgument : "score_relative" "1"
+		with(obj_game) {
+		if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
+		__dnd_score += real(20);
+		}
+	
 		/// @DnDAction : YoYo Games.Loops.Repeat
 		/// @DnDVersion : 1
 		/// @DnDHash : 60DFD3BD
@@ -175,6 +177,18 @@ with(other) {
 			/// @DnDSaveInfo : "objectid" "obj_debrie"
 			instance_create_layer(x + 0, y + 0, "Instances", obj_debrie);
 		}
+	
+		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
+		/// @DnDVersion : 1
+		/// @DnDHash : 10FA7BFD
+		/// @DnDApplyTo : {obj_game}
+		/// @DnDParent : 5BA08B18
+		/// @DnDArgument : "score" "10"
+		/// @DnDArgument : "score_relative" "1"
+		with(obj_game) {
+		if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
+		__dnd_score += real(10);
+		}
 	}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
@@ -185,6 +199,18 @@ with(other) {
 	/// @DnDArgument : "value" "Spr_smallrock"
 	if(sprite_index == Spr_smallrock)
 	{
+		/// @DnDAction : YoYo Games.Instance Variables.Set_Score
+		/// @DnDVersion : 1
+		/// @DnDHash : 78D4C5BC
+		/// @DnDApplyTo : {obj_game}
+		/// @DnDParent : 767FCACB
+		/// @DnDArgument : "score" "5"
+		/// @DnDArgument : "score_relative" "1"
+		with(obj_game) {
+		if(!variable_instance_exists(id, "__dnd_score")) __dnd_score = 0;
+		__dnd_score += real(5);
+		}
+	
 		/// @DnDAction : YoYo Games.Loops.Repeat
 		/// @DnDVersion : 1
 		/// @DnDHash : 23440146

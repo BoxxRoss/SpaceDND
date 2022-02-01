@@ -9,28 +9,28 @@ chancet = random_range(0,100);
 /// @DnDVersion : 1
 /// @DnDHash : 7519D2BF
 /// @DnDArgument : "var" "chancet"
-/// @DnDArgument : "op" "3"
-/// @DnDArgument : "value" "10"
-if(chancet <= 10)
+/// @DnDArgument : "op" "4"
+/// @DnDArgument : "value" "90"
+if(chancet >= 90)
 {
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 6FD3565B
 	/// @DnDParent : 7519D2BF
-	/// @DnDArgument : "xpos_relative" "1"
-	/// @DnDArgument : "ypos_relative" "1"
+	/// @DnDArgument : "xpos" "Obj_bullet.x"
+	/// @DnDArgument : "ypos" "Obj_bullet.y"
 	/// @DnDArgument : "objectid" "thrusters_speed_upgrade"
 	/// @DnDSaveInfo : "objectid" "thrusters_speed_upgrade"
-	instance_create_layer(x + 0, y + 0, "Instances", thrusters_speed_upgrade);
+	instance_create_layer(Obj_bullet.x, Obj_bullet.y, "Instances", thrusters_speed_upgrade);
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 2A981D8A
 /// @DnDArgument : "var" "chancet"
-/// @DnDArgument : "op" "4"
-/// @DnDArgument : "value" "90"
-if(chancet >= 90)
+/// @DnDArgument : "op" "3"
+/// @DnDArgument : "value" "10"
+if(chancet <= 10)
 {
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
@@ -38,6 +38,7 @@ if(chancet >= 90)
 	/// @DnDParent : 2A981D8A
 	/// @DnDArgument : "xpos" "Obj_bullet.x"
 	/// @DnDArgument : "ypos" "Obj_bullet.y"
+	/// @DnDArgument : "var_temp" "1"
 	/// @DnDArgument : "objectid" "gun_speed_upgrade"
 	/// @DnDSaveInfo : "objectid" "gun_speed_upgrade"
 	instance_create_layer(Obj_bullet.x, Obj_bullet.y, "Instances", gun_speed_upgrade);

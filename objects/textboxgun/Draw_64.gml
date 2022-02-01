@@ -124,3 +124,62 @@ if(choicein == 2)
 	/// @DnDArgument : "caption" ""of the ship by 10%""
 	draw_text_transformed(245, 740+down, string("of the ship by 10%") + "", 0.8, 0.8, 0);
 }
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 221E00D1
+/// @DnDArgument : "var" "choicein"
+/// @DnDArgument : "value" "3"
+if(choicein == 3)
+{
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 2A0641CF
+	/// @DnDParent : 221E00D1
+	/// @DnDArgument : "x" "219"
+	/// @DnDArgument : "y" "650+down"
+	/// @DnDArgument : "xscale" "1.1"
+	/// @DnDArgument : "yscale" "1.1"
+	/// @DnDArgument : "caption" ""Bullet Size Upgrade""
+	draw_text_transformed(219, 650+down, string("Bullet Size Upgrade") + "", 1.1, 1.1, 0);
+
+	/// @DnDAction : YoYo Games.Drawing.Set_Color
+	/// @DnDVersion : 1
+	/// @DnDHash : 337FCC76
+	/// @DnDParent : 221E00D1
+	/// @DnDArgument : "color" "$FFE5E5E5"
+	draw_set_colour($FFE5E5E5 & $ffffff);
+	var l337FCC76_0=($FFE5E5E5 >> 24);
+	draw_set_alpha(l337FCC76_0 / $ff);
+
+	/// @DnDAction : YoYo Games.Drawing.Set_Color
+	/// @DnDVersion : 1
+	/// @DnDHash : 65E44E25
+	/// @DnDParent : 221E00D1
+	/// @DnDArgument : "color" "$FFB2B2B2"
+	draw_set_colour($FFB2B2B2 & $ffffff);
+	var l65E44E25_0=($FFB2B2B2 >> 24);
+	draw_set_alpha(l65E44E25_0 / $ff);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 6CA20DEA
+	/// @DnDParent : 221E00D1
+	/// @DnDArgument : "x" "230"
+	/// @DnDArgument : "y" "695+down"
+	/// @DnDArgument : "xscale" "0.8"
+	/// @DnDArgument : "yscale" "0.8"
+	/// @DnDArgument : "caption" ""Increases the size""
+	draw_text_transformed(230, 695+down, string("Increases the size") + "", 0.8, 0.8, 0);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 1B55B533
+	/// @DnDParent : 221E00D1
+	/// @DnDArgument : "x" "245"
+	/// @DnDArgument : "y" "740+down"
+	/// @DnDArgument : "xscale" "0.8"
+	/// @DnDArgument : "yscale" "0.8"
+	/// @DnDArgument : "caption" ""of the bullet by 10%""
+	draw_text_transformed(245, 740+down, string("of the bullet by 10%") + "", 0.8, 0.8, 0);
+}

@@ -87,12 +87,11 @@ if (l40F1584A_0)
 		/// @DnDHash : 65435512
 		/// @DnDParent : 5519E550
 		/// @DnDArgument : "xpos_relative" "1"
-		/// @DnDArgument : "ypos" "-5"
 		/// @DnDArgument : "ypos_relative" "1"
 		/// @DnDArgument : "var" "newbullet"
 		/// @DnDArgument : "objectid" "Obj_bullet"
 		/// @DnDSaveInfo : "objectid" "Obj_bullet"
-		newbullet = instance_create_layer(x + 0, y + -5, "Instances", Obj_bullet);
+		newbullet = instance_create_layer(x + 0, y + 0, "Instances", Obj_bullet);
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1

@@ -20,26 +20,26 @@ if(room == RM_GAME)
 		{
 			variable = 0;
 		
-			var xx = floor(random_range(0, room_width*0.3 + 1));
+			xx = random_range(0, room_width*0.3 + 1);
 		}
 	
 		else
 		{
-			var xx = floor(random_range(room_width*0.7, room_width + 1));
+			xx = random_range(room_width*0.7, room_width + 1);
 		}
 	
 		var choice = choose(0, 1);
 	
 		if(choice == 0)
 		{
-			var yy = floor(random_range(0, room_height*0.3 + 1));
+			yy = random_range(0, room_height*0.3 + 1);
 		}
-	
 		else
-		{
-			var yy = floor(random_range(room_height*0.7, room_height + 1));
-		}
+			
+			yy = random_range(room_height*0.7, room_height + 1);
+		
 	
 		instance_create_layer(xx, yy, "Instances", obj_rock);
-	}
+
+end
 }

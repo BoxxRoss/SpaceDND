@@ -1,14 +1,14 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 017B8BE0
-/// @DnDInput : 4
-/// @DnDArgument : "expr_1" "-5"
-/// @DnDArgument : "expr_2" "5"
+/// @DnDInput : 5
 /// @DnDArgument : "var" "cooldown"
-/// @DnDArgument : "var_1" "anD"
-/// @DnDArgument : "var_2" "anA"
-/// @DnDArgument : "var_3" "upgc"
+/// @DnDArgument : "var_1" "upgc"
+/// @DnDArgument : "var_2" "thrusters"
+/// @DnDArgument : "var_3" "negativethrusters"
+/// @DnDArgument : "var_4" "choicin"
 cooldown = 0;
-anD = -5;
-anA = 5;
 upgc = 0;
+thrusters = 0;
+negativethrusters = 0;
+choicin = 0;

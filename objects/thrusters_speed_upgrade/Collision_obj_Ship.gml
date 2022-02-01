@@ -1,12 +1,24 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 0E96F55D
+/// @DnDHash : 3E6FBFE9
 /// @DnDApplyTo : {obj_Ship}
-/// @DnDArgument : "expr" "-5"
+/// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "upgc"
+/// @DnDArgument : "var" "thrusters"
 with(obj_Ship) {
-upgc += -5;
+thrusters += 1;
+
+}
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 0490C535
+/// @DnDApplyTo : {obj_Ship}
+/// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_relative" "1"
+/// @DnDArgument : "var" "negativethrusters"
+with(obj_Ship) {
+negativethrusters += 1;
 
 }
 
@@ -27,11 +39,11 @@ instance_create_layer(150, 400, "no", textboxgun);
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 2781A62C
+/// @DnDHash : 6D62BB6C
 /// @DnDApplyTo : {textboxgun}
-/// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr" "2"
 /// @DnDArgument : "var" "choicein"
 with(textboxgun) {
-choicein = 1;
+choicein = 2;
 
 }

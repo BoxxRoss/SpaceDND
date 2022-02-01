@@ -1,6 +1,6 @@
 /// @DnDAction : YoYo Games.Instances.Sprite_Rotate
 /// @DnDVersion : 1
 /// @DnDHash : 277D6906
-/// @DnDArgument : "angle" "anD"
+/// @DnDArgument : "angle" "-5"
 /// @DnDArgument : "angle_relative" "1"
-image_angle += anD;
+image_angle += -5;

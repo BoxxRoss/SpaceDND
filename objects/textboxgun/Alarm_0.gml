@@ -1,6 +1,6 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 4346A561
-/// @DnDArgument : "expr" "0.035"
-/// @DnDArgument : "var" "ima"
-ima = 0.035;
+/// @DnDHash : 27D29F9F
+/// @DnDArgument : "expr" "20"
+/// @DnDArgument : "var" "up"
+up = 20;

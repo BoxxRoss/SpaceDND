@@ -24,13 +24,13 @@
   "gridX": 2,
   "gridY": 2,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Sprite15/Sprite15.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Sprite15/Sprite15.yy",},"LayerId":{"name":"a7a87cd6-8086-477b-a28d-733904771dd7","path":"sprites/Sprite15/Sprite15.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Sprite15/Sprite15.yy",},"LayerId":{"name":"33478130-cfbc-4d2b-8cc0-ec46bdbf45e0","path":"sprites/Sprite15/Sprite15.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},"resourceVersion":"1.0","name":"7d1fe503-ec30-496a-b9f7-5264f426930b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Textbox/Textbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Textbox/Textbox.yy",},"LayerId":{"name":"a7a87cd6-8086-477b-a28d-733904771dd7","path":"sprites/Textbox/Textbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Textbox/Textbox.yy",},"LayerId":{"name":"33478130-cfbc-4d2b-8cc0-ec46bdbf45e0","path":"sprites/Textbox/Textbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Textbox","path":"sprites/Textbox/Textbox.yy",},"resourceVersion":"1.0","name":"7d1fe503-ec30-496a-b9f7-5264f426930b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},
+    "spriteId": {"name":"Textbox","path":"sprites/Textbox/Textbox.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -42,7 +42,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"321489ea-fef9-459d-b940-e2c234f6105a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Sprite15/Sprite15.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"321489ea-fef9-459d-b940-e2c234f6105a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7d1fe503-ec30-496a-b9f7-5264f426930b","path":"sprites/Textbox/Textbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,9 +59,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},
+    "parent": {"name":"Textbox","path":"sprites/Textbox/Textbox.yy",},
     "resourceVersion": "1.3",
-    "name": "Sprite15",
+    "name": "Textbox",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -75,7 +75,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sprite15",
+  "name": "Textbox",
   "tags": [],
   "resourceType": "GMSprite",
 }

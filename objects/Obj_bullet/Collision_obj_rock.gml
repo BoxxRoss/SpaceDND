@@ -1,29 +1,46 @@
-/// @DnDAction : YoYo Games.Random.Get_Random_Number
+/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 7964EA12
-/// @DnDArgument : "var" "chancegun"
-/// @DnDArgument : "var_temp" "1"
-/// @DnDArgument : "type" "1"
-/// @DnDArgument : "max" "100"
-var chancegun = floor(random_range(0, 100 + 1));
+/// @DnDHash : 534CB6D4
+/// @DnDArgument : "expr" "random_range(0,100)"
+/// @DnDArgument : "var" "chancet"
+chancet = random_range(0,100);
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 505E5D52
-/// @DnDArgument : "var" "chancegun"
-/// @DnDArgument : "op" "4"
-/// @DnDArgument : "value" "96"
-if(chancegun >= 96)
+/// @DnDHash : 7519D2BF
+/// @DnDArgument : "var" "chancet"
+/// @DnDArgument : "op" "3"
+/// @DnDArgument : "value" "10"
+if(chancet <= 10)
 {
 	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
-	/// @DnDHash : 2DCF7570
-	/// @DnDParent : 505E5D52
+	/// @DnDHash : 6FD3565B
+	/// @DnDParent : 7519D2BF
 	/// @DnDArgument : "xpos_relative" "1"
 	/// @DnDArgument : "ypos_relative" "1"
+	/// @DnDArgument : "objectid" "thrusters_speed_upgrade"
+	/// @DnDSaveInfo : "objectid" "thrusters_speed_upgrade"
+	instance_create_layer(x + 0, y + 0, "Instances", thrusters_speed_upgrade);
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2A981D8A
+/// @DnDArgument : "var" "chancet"
+/// @DnDArgument : "op" "4"
+/// @DnDArgument : "value" "90"
+if(chancet >= 90)
+{
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 09160D25
+	/// @DnDParent : 2A981D8A
+	/// @DnDArgument : "xpos" "Obj_bullet.x"
+	/// @DnDArgument : "ypos" "Obj_bullet.y"
 	/// @DnDArgument : "objectid" "gun_speed_upgrade"
 	/// @DnDSaveInfo : "objectid" "gun_speed_upgrade"
-	instance_create_layer(x + 0, y + 0, "Instances", gun_speed_upgrade);
+	instance_create_layer(Obj_bullet.x, Obj_bullet.y, "Instances", gun_speed_upgrade);
 }
 
 /// @DnDAction : YoYo Games.Audio.Audio_Set_Volume

@@ -17,15 +17,15 @@ if(room == RM_GAMEOVER)
 /// @DnDHash : 58D60025
 /// @DnDArgument : "var" "speed"
 /// @DnDArgument : "op" "2"
-/// @DnDArgument : "value" "10"
-if(speed > 10)
+/// @DnDArgument : "value" "10+thrusters"
+if(speed > 10+thrusters)
 {
 	/// @DnDAction : YoYo Games.Movement.Set_Speed
 	/// @DnDVersion : 1
 	/// @DnDHash : 4D62A842
 	/// @DnDParent : 58D60025
-	/// @DnDArgument : "speed" "10"
-	speed = 10;
+	/// @DnDArgument : "speed" "10+thrusters"
+	speed = 10+thrusters;
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
@@ -33,15 +33,15 @@ if(speed > 10)
 /// @DnDHash : 7A09FFCA
 /// @DnDArgument : "var" "speed"
 /// @DnDArgument : "op" "1"
-/// @DnDArgument : "value" "-10"
-if(speed < -10)
+/// @DnDArgument : "value" "-10+negativethrusters"
+if(speed < -10+negativethrusters)
 {
 	/// @DnDAction : YoYo Games.Movement.Set_Speed
 	/// @DnDVersion : 1
 	/// @DnDHash : 52C8E538
 	/// @DnDParent : 7A09FFCA
-	/// @DnDArgument : "speed" "-10"
-	speed = -10;
+	/// @DnDArgument : "speed" "-10-negativethrusters"
+	speed = -10-negativethrusters;
 }
 
 /// @DnDAction : YoYo Games.Movement.Wrap_Room
@@ -113,9 +113,9 @@ if (l40F1584A_0)
 		/// @DnDVersion : 1
 		/// @DnDHash : 6D081557
 		/// @DnDParent : 5519E550
-		/// @DnDArgument : "expr" "45+upgc"
+		/// @DnDArgument : "expr" "50+upgc"
 		/// @DnDArgument : "var" "cooldown"
-		cooldown = 45+upgc;
+		cooldown = 50+upgc;
 	}
 }
 

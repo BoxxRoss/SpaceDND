@@ -53,15 +53,13 @@ repeat(5)
 		/// @DnDArgument : "option" "room_width"
 		var xx = choose(room_width, 0);
 	
-		/// @DnDAction : YoYo Games.Random.Get_Random_Number
+		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 2DA99774
+		/// @DnDHash : 1B2B33FC
 		/// @DnDParent : 318B4B3A
+		/// @DnDArgument : "expr" "random_range(0, room_height)"
 		/// @DnDArgument : "var" "yy"
-		/// @DnDArgument : "var_temp" "1"
-		/// @DnDArgument : "type" "1"
-		/// @DnDArgument : "max" "room_height"
-		var yy = floor(random_range(0, room_height + 1));
+		yy = random_range(0, room_height);
 	}
 
 	/// @DnDAction : YoYo Games.Common.Else
@@ -80,15 +78,13 @@ repeat(5)
 		/// @DnDArgument : "option" "room_height"
 		var yy = choose(room_height, 0);
 	
-		/// @DnDAction : YoYo Games.Random.Get_Random_Number
+		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
-		/// @DnDHash : 37DDE3DA
+		/// @DnDHash : 2E8679BE
 		/// @DnDParent : 10C43BB8
+		/// @DnDArgument : "expr" "random_range(0, room_width)"
 		/// @DnDArgument : "var" "xx"
-		/// @DnDArgument : "var_temp" "1"
-		/// @DnDArgument : "type" "1"
-		/// @DnDArgument : "max" "room_width"
-		var xx = floor(random_range(0, room_width + 1));
+		xx = random_range(0, room_width);
 	}
 
 	/// @DnDAction : YoYo Games.Instances.Create_Instance

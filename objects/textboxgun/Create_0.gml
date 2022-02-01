@@ -1,16 +1,14 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 6D87EC69
-/// @DnDInput : 3
-/// @DnDArgument : "var" "image_alpha"
-/// @DnDArgument : "var_1" "ima"
-/// @DnDArgument : "var_2" "varu"
-image_alpha = 0;
-ima = 0;
-varu = 0;
+/// @DnDHash : 570F9711
+/// @DnDInput : 2
+/// @DnDArgument : "var" "up"
+/// @DnDArgument : "var_1" "down"
+up = 0;
+down = 0;
 
 /// @DnDAction : YoYo Games.Instances.Set_Alarm
 /// @DnDVersion : 1
-/// @DnDHash : 4E5D8B5E
-/// @DnDArgument : "steps" "60"
-alarm_set(0, 60);
+/// @DnDHash : 2B42665A
+/// @DnDArgument : "steps" "300"
+alarm_set(0, 300);

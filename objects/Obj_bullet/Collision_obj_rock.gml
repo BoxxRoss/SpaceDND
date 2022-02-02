@@ -19,6 +19,7 @@ if(chancet >= 90)
 	/// @DnDParent : 7519D2BF
 	/// @DnDArgument : "xpos" "Obj_bullet.x"
 	/// @DnDArgument : "ypos" "Obj_bullet.y"
+	/// @DnDArgument : "var_temp" "1"
 	/// @DnDArgument : "objectid" "thrusters_speed_upgrade"
 	/// @DnDSaveInfo : "objectid" "thrusters_speed_upgrade"
 	instance_create_layer(Obj_bullet.x, Obj_bullet.y, "Instances", thrusters_speed_upgrade);
@@ -42,6 +43,25 @@ if(chancet <= 10)
 	/// @DnDArgument : "objectid" "gun_speed_upgrade"
 	/// @DnDSaveInfo : "objectid" "gun_speed_upgrade"
 	instance_create_layer(Obj_bullet.x, Obj_bullet.y, "Instances", gun_speed_upgrade);
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7682AEC3
+/// @DnDArgument : "var" "chancet"
+/// @DnDArgument : "value" "65"
+if(chancet == 65)
+{
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 1D89F179
+	/// @DnDParent : 7682AEC3
+	/// @DnDArgument : "xpos" "Obj_bullet.x"
+	/// @DnDArgument : "ypos" "Obj_bullet.y"
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "objectid" "Gun_size_upgrade"
+	/// @DnDSaveInfo : "objectid" "Gun_size_upgrade"
+	instance_create_layer(Obj_bullet.x, Obj_bullet.y, "Instances", Gun_size_upgrade);
 }
 
 /// @DnDAction : YoYo Games.Audio.Audio_Set_Volume

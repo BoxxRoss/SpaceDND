@@ -15,6 +15,10 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"Gun_size_upgrade","path":"objects/Gun_size_upgrade/Gun_size_upgrade.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1152.0,"y":672.0,"resourceVersion":"1.0","name":"inst_4191E7AB","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Gun_size_upgrade","path":"objects/Gun_size_upgrade/Gun_size_upgrade.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1376.0,"y":672.0,"resourceVersion":"1.0","name":"inst_27B2642D","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Gun_size_upgrade","path":"objects/Gun_size_upgrade/Gun_size_upgrade.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":672.0,"resourceVersion":"1.0","name":"inst_65C1F857","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Gun_size_upgrade","path":"objects/Gun_size_upgrade/Gun_size_upgrade.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1504.0,"y":672.0,"resourceVersion":"1.0","name":"inst_226CB696","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Gun_size_upgrade","path":"objects/Gun_size_upgrade/Gun_size_upgrade.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1600.0,"y":672.0,"resourceVersion":"1.0","name":"inst_1021CF81","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"bulletlayer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_Ship","path":"objects/obj_Ship/obj_Ship.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":928.0,"y":704.0,"resourceVersion":"1.0","name":"inst_33E529E","tags":[],"resourceType":"GMRInstance",},
@@ -32,6 +36,10 @@
     {"name":"inst_33E529E","path":"rooms/RM_GAME/RM_GAME.yy",},
     {"name":"inst_67AF89D0","path":"rooms/RM_GAME/RM_GAME.yy",},
     {"name":"inst_4191E7AB","path":"rooms/RM_GAME/RM_GAME.yy",},
+    {"name":"inst_27B2642D","path":"rooms/RM_GAME/RM_GAME.yy",},
+    {"name":"inst_65C1F857","path":"rooms/RM_GAME/RM_GAME.yy",},
+    {"name":"inst_226CB696","path":"rooms/RM_GAME/RM_GAME.yy",},
+    {"name":"inst_1021CF81","path":"rooms/RM_GAME/RM_GAME.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

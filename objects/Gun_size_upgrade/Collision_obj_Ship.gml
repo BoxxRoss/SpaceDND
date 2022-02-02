@@ -1,11 +1,12 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 27A31E8D
-/// @DnDApplyTo : {Obj_bullet}
+/// @DnDHash : 0E48863C
+/// @DnDApplyTo : {obj_Ship}
 /// @DnDArgument : "expr" "1"
+/// @DnDArgument : "expr_relative" "1"
 /// @DnDArgument : "var" "moresprite"
-with(Obj_bullet) {
-moresprite = 1;
+with(obj_Ship) {
+moresprite += 1;
 
 }
 

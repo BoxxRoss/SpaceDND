@@ -1,5 +1,7 @@
 
 
+instance_create_layer(x, y, "Instances", Obj_trail)
+
 if(room == RM_GAMEOVER)
 {
 	instance_destroy();
@@ -46,3 +48,4 @@ if (l40F1584A_0)
 }
 
 cooldown += -3;
+

@@ -1,5 +1,5 @@
 
-	
+
 if(room == RM_GAMEOVER)
 {
 	instance_destroy();
@@ -32,12 +32,13 @@ if (l40F1584A_0)
 		imagee = 0;
 	
 		newbullet.direction = image_angle;
-	
+		newbullet.image_xscale = addx + morx
+		newbullet.image_yscale = addy + mory
+		
 		cooldown = 50+upgc;
 		
 		
-		if moresprite = 1 
-			event_user(1);
+	
 		{
 			
 		}

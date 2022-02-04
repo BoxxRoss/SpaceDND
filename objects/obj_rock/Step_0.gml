@@ -6,5 +6,5 @@ move_wrap(1, 1, 0);
 /// @DnDAction : YoYo Games.Instances.Sprite_Rotate
 /// @DnDVersion : 1
 /// @DnDHash : 17CA58F4
-/// @DnDArgument : "angle" "1.5"
-image_angle = 1.5;
+/// @DnDArgument : "angle" "random_range(1,3)"
+image_angle = random_range(1,3);

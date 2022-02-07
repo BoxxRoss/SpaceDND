@@ -40,6 +40,8 @@
     {"id":{"name":"Spr_Backgroundmore","path":"sprites/Spr_Backgroundmore/Spr_Backgroundmore.yy",},"order":12,},
     {"id":{"name":"obj_Ship","path":"objects/obj_Ship/obj_Ship.yy",},"order":0,},
     {"id":{"name":"SPR_debris","path":"sprites/SPR_debris/SPR_debris.yy",},"order":7,},
+    {"id":{"name":"spr_healthrestore","path":"sprites/spr_healthrestore/spr_healthrestore.yy",},"order":21,},
+    {"id":{"name":"obj_healthregen","path":"objects/obj_healthregen/obj_healthregen.yy",},"order":17,},
     {"id":{"name":"gun_speed_upgrade","path":"objects/gun_speed_upgrade/gun_speed_upgrade.yy",},"order":7,},
     {"id":{"name":"RM_START","path":"rooms/RM_START/RM_START.yy",},"order":1,},
     {"id":{"name":"Spr_upgradedship","path":"sprites/Spr_upgradedship/Spr_upgradedship.yy",},"order":10,},

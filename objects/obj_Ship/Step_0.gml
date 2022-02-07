@@ -40,7 +40,7 @@ if (l40F1584A_0)
 		cooldown = 50+upgc;
 		
 		
-	
+
 		{
 			
 		}
@@ -49,3 +49,12 @@ if (l40F1584A_0)
 
 cooldown += -3;
 
+var l69939CE8_0;
+l69939CE8_0 = keyboard_check_direct(ord("E"));
+if (l69939CE8_0)
+{	
+	if(!(speed == 0))
+		speed += -0.05
+	if(speed == 0)
+		speed = 0
+end

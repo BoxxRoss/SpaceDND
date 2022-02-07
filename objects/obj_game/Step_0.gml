@@ -62,6 +62,16 @@ if(room == RM_GAME)
 		/// @DnDArgument : "var" "health"
 		health = 100;
 	
+		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 4C5B86AE
+		/// @DnDParent : 1935CFA2
+		/// @DnDArgument : "xpos" "obj_Ship.x"
+		/// @DnDArgument : "ypos" "obj_Ship.y"
+		/// @DnDArgument : "objectid" "Obj_explosion"
+		/// @DnDSaveInfo : "objectid" "Obj_explosion"
+		instance_create_layer(obj_Ship.x, obj_Ship.y, "Instances", Obj_explosion);
+	
 		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 		/// @DnDVersion : 1
 		/// @DnDHash : 6FDD962A

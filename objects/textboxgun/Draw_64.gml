@@ -183,3 +183,42 @@ if(choicein == 3)
 	/// @DnDArgument : "caption" ""of the bullet by 10%""
 	draw_text_transformed(245, 740+down, string("of the bullet by 10%") + "", 0.8, 0.8, 0);
 }
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 452CB05A
+/// @DnDArgument : "var" "choicein"
+/// @DnDArgument : "value" "4"
+if(choicein == 4)
+{
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 365E9F4E
+	/// @DnDParent : 452CB05A
+	/// @DnDArgument : "x" "230"
+	/// @DnDArgument : "y" "650+down"
+	/// @DnDArgument : "xscale" "1.1"
+	/// @DnDArgument : "yscale" "1.1"
+	/// @DnDArgument : "caption" ""Health Restore""
+	draw_text_transformed(230, 650+down, string("Health Restore") + "", 1.1, 1.1, 0);
+
+	/// @DnDAction : YoYo Games.Drawing.Set_Color
+	/// @DnDVersion : 1
+	/// @DnDHash : 3735DC87
+	/// @DnDParent : 452CB05A
+	/// @DnDArgument : "color" "$FFC6FFB5"
+	draw_set_colour($FFC6FFB5 & $ffffff);
+	var l3735DC87_0=($FFC6FFB5 >> 24);
+	draw_set_alpha(l3735DC87_0 / $ff);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 3CC27D05
+	/// @DnDParent : 452CB05A
+	/// @DnDArgument : "x" "230"
+	/// @DnDArgument : "y" "695+down"
+	/// @DnDArgument : "xscale" "0.8"
+	/// @DnDArgument : "yscale" "0.8"
+	/// @DnDArgument : "caption" ""Restore Health to 100""
+	draw_text_transformed(230, 695+down, string("Restore Health to 100") + "", 0.8, 0.8, 0);
+}
